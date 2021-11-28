@@ -14,6 +14,8 @@ public class Administrative_User implements Serializable {
     private String password;
     private String name;
 
+    /*get y set */
+
     public Integer getIdAdministrative() {
         return idAdministrative;
     }
