@@ -1,7 +1,6 @@
 package co.usa.ciclo3reto4.ciclo3.controller;
 
-import co.usa.ciclo3reto4.ciclo3.model.Administrative_User;
-import co.usa.ciclo3reto4.ciclo3.service.AdministrativeUserService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -15,7 +14,7 @@ import java.util.Optional;
 public class AdministrativeUserController {
         @Autowired
     private AdministrativeUserService administrativeUserService;
-    
+
     @GetMapping("/all")
     public List<Administrative_User> getAdministratives(){
         return administrativeUserService.getAll();
